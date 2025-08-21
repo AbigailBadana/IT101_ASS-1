@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background wrapper for blur effect -->
+  <div class="blur-background" id="blurBackground">
+    <div class="login-container" id="loginContainer">
+      <img src="images/logo.png" alt="Logo" class="logo">
+      <h2>Login</h2>
+      <input type="text" id="username" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
+      <button id="loginBtn">Log In</button>
+      <div class="link">
+        <a href="#">Forgot Password?</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Success Container -->
+  <div class="modal-overlay" id="successModal">
+    <div class="modal-box">
+      <h2>Login Successful!</h2>
+      <p>Welcome, you have successfully logged in.</p>
+      <button id="closeModal">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

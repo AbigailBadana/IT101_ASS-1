@@ -1,0 +1,116 @@
+/* --- Your original CSS --- */
+body {
+  font-family: Arial, sans-serif;
+  background: url('./images/back.png') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  cursor: url('./images/paw.png') 16 16, auto;
+  transition: filter 0.3s ease;
+}
+
+.login-container {
+  position: relative;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent */
+  padding: 60px 20px 20px; /* Increased top padding for logo */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1E3A5F;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #1E3A5F;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(90deg, #1E90FF, #4682B4);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: url('./images/paw2.png') 16 16, auto;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #4682B4, #1E90FF);
+}
+
+.link {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.link a {
+  color: #1E90FF;
+  text-decoration: none;
+  cursor: url('./images/paw2.png') 16 16, auto;
+}
+
+.link a:hover {
+  color: #4682B4;
+}
+
+.logo {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  padding: 4px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff, #004e92);
+  box-shadow: 0 0 20px 5px rgba(0, 114, 255, 0.5),
+              0 0 40px 10px rgba(0, 198, 255, 0.3);
+}
+
+/* --- Modal Styles --- */
+.blur-background {
+  transition: filter 0.3s ease;
+}
+
+.blur-background.active {
+  filter: blur(5px);
+}
+
+/* Modal Styles */
+.modal-overlay {
+  display: none; /* hidden initially */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-box {
+  background: white;
+  padding: 30px 25px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 350px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
